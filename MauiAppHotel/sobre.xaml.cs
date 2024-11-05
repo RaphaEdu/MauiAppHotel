@@ -11,6 +11,6 @@ public partial class sobre : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-        App.Current.MainPage = new ContratacaoHospedagem();
+        Navigation.PopAsync();
     }
 }

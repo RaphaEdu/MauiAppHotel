@@ -64,7 +64,8 @@
                 <Label Text="Escolha sua Suíte"/>
 
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione a sua acomodação"/>
+                        Title="Selecione a sua acomodação"
+                        ItemDisplayBinding="{Binding Descricao}"/>
                 
                 <!--Datas-->
                 <Frame Padding="10"
@@ -76,6 +77,7 @@
                         <HorizontalStackLayout>
                             <Label Text="Check-in:"/>
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/mm/yyyy"/>
                         </HorizontalStackLayout>
                         
@@ -93,7 +95,8 @@
                         Margin="3"
                         BackgroundColor="DeepSkyBlue"
                         FontAttributes="Bold"
-                        TextColor="Black"/>
+                        TextColor="Black"
+                        Clicked="Button_Clicked_1"/>
                 
                 <Button Text="Sobre o hotel Thousand Sunny" 
                         Margin="3"
