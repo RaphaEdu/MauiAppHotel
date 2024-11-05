@@ -4,7 +4,7 @@
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="false"
-             BackgroundColor="Black">
+             BackgroundColor="DeepSkyBlue">
 
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
@@ -13,11 +13,13 @@
         <!--Cálculo das Diárias-->
         <Label 
             Text="Cálculo da diária"
-            FontFamily="DotGothic16"
             FontSize="40"
-            TextColor="{StaticResource Primary}"/>
+            FontFamily="DotGothic16"
+            TextColor="Black"
+            />
 
-        <Frame Padding="10">
+        <Frame Padding="10"
+>
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 2*">
@@ -28,7 +30,7 @@
                            Text="Adultos: "/>
                     <Label Grid.Row="0"
                            Grid.Column="1"
-                           TextColor="{StaticResource Primary}"
+                           TextColor="DeepSkyBlue"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"/>
                     <Stepper Grid.Row="0"
@@ -36,7 +38,8 @@
                              x:Name="stp_adultos"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1"/>
+                             Increment="1"
+                             BackgroundColor="DeepSkyBlue"/>
 
                     <!--Crianças-->
                     <Label Grid.Row="1"
@@ -44,7 +47,7 @@
                            Text="Crianças: "/>
                     <Label Grid.Row="1"
                            Grid.Column="1"
-                           TextColor="{StaticResource Primary}"
+                           TextColor="DeepSkyBlue"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_crianca}"/>
                     <Stepper Grid.Row="1"
@@ -52,7 +55,8 @@
                              x:Name="stp_crianca"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1"/>
+                             Increment="1"
+                             BackgroundColor="DeepSkyBlue"/>
 
                 </Grid>
                 
@@ -85,7 +89,18 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar"/>
+                <Button Text="Avançar"
+                        Margin="3"
+                        BackgroundColor="DeepSkyBlue"
+                        FontAttributes="Bold"
+                        TextColor="Black"/>
+                
+                <Button Text="Sobre o hotel Thousand Sunny" 
+                        Margin="3"
+                        BackgroundColor="DeepSkyBlue"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="Button_Clicked"/>
 
 
 

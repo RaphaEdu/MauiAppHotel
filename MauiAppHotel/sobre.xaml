@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.sobre"
+             Title="sobre"
+             BackgroundColor="DeepSkyBlue">
+    
+    
+    <VerticalStackLayout  VerticalOptions="CenterAndExpand"
+                          Padding="10">
+        <Label Text="Thousand Sunny"
+               FontFamily="DotGothic16"
+               TextColor="Black"
+               FontSize="40"/>
+
+        <Frame>
+            <VerticalStackLayout>
+                <Label Text="O Hotel Thousand Sunny tem o dever de dar confronto aos seus hóspedes, seja você um pirata novato ou um a nível Yonkou. Temos os melhores banquetes preparados pelo nosso chefe de cozinha Sanji, música ao vivo com nosso cantor Brook e show de stand up com o comediante Usopp, nossa academia conta com um dos melhores personal de toda East Blue, Roronoa Zoro, também temos nossa oficina para concertar seu navio danificado com nosso carpinteiro Franky."
+        Margin="5"/>
+
+                <Label Text="Desenvolvedor do aplicativo:"
+        FontSize="20"
+        FontFamily="DotGothic16"
+        TextColor="DeepSkyBlue"/>
+                <Label Text="Raphael Eduardo de Oliveira"/>
+
+                <Label Text="Ano de desenvolvimento:"
+        FontSize="20"
+        FontFamily="DotGothic16"
+        TextColor="DeepSkyBlue"/>
+                <Label Text="2024"/>
+
+                <Button Text="Voltar" 
+                        Margin="10"
+                        BackgroundColor="DeepSkyBlue"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="Button_Clicked"/>
+            </VerticalStackLayout>
+        </Frame>
+        
+    </VerticalStackLayout>
+</ContentPage>
